@@ -1,0 +1,210 @@
+/* ============================
+   Common Styles
+   ============================ */
+
+/* List items */
+li {
+    list-style: none;
+}
+
+/* Main App Background */
+.stApp {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Page container spacing */
+.main .block-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Headers */
+.app-header {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 1.5rem 0;
+    text-align: center;
+    background: linear-gradient(90deg, #ff7e00, #ffd200); /* Orange to Yellow */
+    color: white;
+}
+/* Sidebar background */
+[data-testid="stSidebar"] {
+    background-color: #1e1e1e; /* Dark grey background */
+    color: white;
+}
+
+/* Sidebar text color */
+[data-testid="stSidebar"] * {
+    color: white !important;
+}
+
+/* Sidebar buttons */
+[data-testid="stSidebar"] button {
+    background-color: #ffcc00 !important; /* Yellow buttons */
+    color: black !important;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+[data-testid="stSidebar"] button:hover {
+    background-color: #ffdb4d !important;
+    color: black !important;
+}
+/* Style for sidebar buttons */
+.stButton>button {
+    margin: 0.25rem 0;
+    transition: all 0.2s ease;
+}
+
+.stButton>button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Active button state */
+.stButton>button[type="primary"] {
+    background-color: #ff4b4b;
+    border-color: #ff4b4b;
+}
+
+.stButton>button[type="primary"]:hover {
+    background-color: #ff6b6b;
+    border-color: #ff6b6b;
+}
+.app-subheader {
+    font-size: 1.2rem;
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Mode Selector */
+.mode-selector {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.mode-card {
+    background: #1e1e1e;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.mode-card:hover {
+    background: #2c2c2c;
+    transform: scale(1.05);
+}
+
+.mode-card.active {
+    border: 2px solid #4b6cb7;
+}
+
+.mode-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.mode-title {
+    font-weight: 600;
+}
+
+.mode-description {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* Features Section */
+.features-section {
+    padding: 2rem 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.feature-card {
+    background: #1e1e1e;
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.feature-card:hover {
+    background: #2c2c2c;
+    transform: translateY(-5px);
+}
+
+.feature-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.feature-list {
+    padding-left: 1.2rem;
+}
+
+.feature-list li {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.feature-list li::before {
+    content: "•";
+    color: #4b6cb7;
+    position: absolute;
+    left: -1.2rem;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Buttons */
+.stButton > button {
+    background: linear-gradient(90deg, #4b6cb7, #182848);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.stButton > button:hover {
+    opacity: 0.9;
+}
+
+.stButton > button:active {
+    transform: scale(0.98);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4b6cb7;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #365899;
+}
