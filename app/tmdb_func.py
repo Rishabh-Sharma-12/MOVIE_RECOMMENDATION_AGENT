@@ -1,4 +1,3 @@
-import streamlit as st
 import os
 import re
 import json
@@ -6,40 +5,22 @@ import time
 import asyncio
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
-from dotenv import load_dotenv
-import requests
 
-
-# Standard Library Impoimport os
-import re
-import json
-import time
-import os 
-import asyncio
-from datetime import datetime
-from concurrent.futures import ThreadPoolExecutor
-from io import BytesIO
-
-# Third-Party Imports
 import requests
 import streamlit as st
-from PIL import Image
 from dotenv import load_dotenv
+from PIL import Image
 
-# LangChain Core Imports
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser, JsonOutputParser
 from langchain_core.tools import Tool
 
-# LangChain Community Imports
 from langchain_community.tools import WikipediaQueryRun, DuckDuckGoSearchRun
 from langchain_community.utilities import WikipediaAPIWrapper
 
-# LangChain Agents (if needed)
 from langchain.agents import initialize_agent, AgentType
-
-# Groq Imports
 from langchain_groq import ChatGroq
+
 
 def inject_global_css():
     """Inject all CSS styles for the application"""

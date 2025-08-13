@@ -10,10 +10,12 @@ langchain==0.3.26
 langchain-core==0.3.68
 langchain-community==0.3.25
 langchain-openai==0.3.27
+langchain-groq
 numpy==2.3.2
 openai==1.88.0
 pandas==2.3.1
 pillow==11.3.0
+python-dotenv
 requests==2.32.4
 scikit-learn==1.7.0
 scipy==1.15.3
