@@ -112,10 +112,4 @@ Whether you're fixing bugs or adding new features, contributions are welcome. �
 
 ---
 
-## 👤 Author
-
-**Rishabh-Sharma-12**
-
----
-
 ⭐️ If you like this project, give it a star and try running it with Docker! 🚢
