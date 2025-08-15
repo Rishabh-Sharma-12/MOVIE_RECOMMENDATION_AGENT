@@ -2,6 +2,9 @@
 venv/
 .venv/
 
+IBM_MOVIE
+.IBM_MOVIE/
+
 # Ignore environment variable files
 .env
 *.env
