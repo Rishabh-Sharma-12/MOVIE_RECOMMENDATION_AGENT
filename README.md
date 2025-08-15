@@ -3,6 +3,9 @@
 Welcome to the **Movie Recommendation Agent**!  
 A Python-powered system that leverages database APIs and smart agents to fetch accurate movie data and provide personalized recommendations. 🍿🤖
 
+## 😬 Demo
+![Main Dashboard](IMG/img.png)
+
 ---
 
 ## 🚀 Features
@@ -95,6 +98,7 @@ docker run --env-file .env movie-recommendation-agent
 - Docker for containerization
 
 ---
+
 
 ## 📚 How it Works
 
